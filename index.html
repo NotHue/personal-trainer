@@ -1,0 +1,732 @@
+#HISTORIA DA DOMESTICAÇÃO DO CACHORRO E SEU OBJETIVO -> GERALMENTE ELE CONTA A HISTÓRIA DA DOMESTICAÇÃO UMA PINCELADA PRA ELE ENTENDER AS NECESSIDADES DO CACHORRO (TRATAR CACHORRO IGUAL GENTE)
+#PRINCIPAIS QUESTÕES QUE SÃO RELEVANTES PARA ADESTRAMENTO
+#IDADE, SEXO, RAÇA, TAMANHO, QUANTIDADE DE CÃES, TEMPO COM O DONO, ORIGEM, CASTRAÇÃO
+#QUALQUER RAÇA QUALQUER TAMANHO
+#MUITAS VEZES OS CLIENTES NÃO SEGUEM AS RECOMENDAÇÕES APÓS O ADESTRAMENTO E ISSO NÃO PERPETUA O RESULTADO
+          
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeildo | Serviços Caninos Profissionais</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #FF4500;
+      --primary-hover: #E03E00;
+      --text-light: #FFFFFF;
+      --text-dark: #333333;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hero-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('asset_path("cao1.jpg")');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .navbar {
+      background-color: var(--primary-color) !important;
+      padding: 15px 0;
+    }
+
+    .nav-item a {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      font-weight: 600;
+      padding: 8px 15px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-item a:hover {
+      color: var(--text-light);
+      transform: scale(1.065);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+
+    .service-card, .problem-card, .tip-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card:hover, .problem-card:hover, .tip-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary-color);
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      padding: 10px 25px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-primary {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .section-title {
+      position: relative;
+      margin-bottom: 50px;
+      color: var(--primary-color);
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+
+    .space-img {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .space-img:hover {
+      transform: scale(1.03);
+    }
+
+    .problem-icon, .tip-icon {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      padding: 30px 0;
+    }
+
+    .social-icon {
+      color: var(--text-light);
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: all 0.3s;
+    }
+
+    .social-icon:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+    .input-file-hidden {
+      display: none;
+    }
+    
+    .input-file-label {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      max-width: 200px;
+      text-align: center;
+      justify-content: center;
+      margin: 0 auto;
+      background-color: #ff6f61;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    
+    .input-file-label:hover {
+      background-color: #e85c50;
+    }
+    .input-file-label:active {
+      background-color: #e85c50;
+      transform: scale(0.98);
+    } 
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img "cao0.jpg", alt:"Logomarca Zeildo", class:"img-fluid", style:"max-width: 120px; border-radius: 15px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#problems">Problemas Comuns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tips">Dicas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#space">Meu Espaço</a>
+          </li>
+          <!--li class="nav-item">
+            <a class="nav-link" href="#testimonials">Depoimentos</a>
+          </li-->
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#caes">Nossos Cães</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Cuidando do seu melhor amigo</h1>
+      <p class="lead fs-4">Aula de Adestramento • Treino à Domicílios • Treino Comportamental </p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Entre em Contato</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Nossos Serviços</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card service-card h-100">
+            <img "cao1.jpg", class: "card-img-top", alt: "Passeios com cães">
+            <div class="card-body">
+              <h5 class="card-title">Aula de Adestramento</h5>
+              <p class="card-text">Passeios personalizados de acordo com as necessidades do seu cão. Exercício físico e mental garantidos.</p>
+              <ul class="list-unstyled">
+                <li>✔ Passeios individuais ou em grupo</li>
+                <li>✔ Duração de 30min a 1h30</li>
+                <li>✔ Relatório diário</li>
+              </ul>
+  
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100">
+            <img src="images/cao2.jpg", class: "card-img-top", alt: "Passeios com cães" >
+            <div class="card-body">
+              <h5 class="card-title">Treino a Domicílios</h5>
+              <p class="card-text">Métodos positivos para educar seu cão e resolver problemas comportamentais.</p>
+              <ul class="list-unstyled">
+                <li>✔ Obediência básica e avançada</li>
+                <li>✔ Correção de comportamentos</li>
+                <li>✔ Socialização</li>
+                <li>✔ Aulas em domicílio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100">
+            <img  src="images/cao3.webp", class: "card-img-top", alt: "Hotelaria canina">
+            <div class="card-body">
+              <h5 class="card-title">Treino Comportamental</h5>
+              <p class="card-text">Quando você viaja, seu cão fica em um ambiente seguro, acolhedor e cheio de cuidados.</p>
+              <ul class="list-unstyled">
+                <li>✔ Alojamento individual</li>
+                <li>✔ Atividades diárias</li>
+                <li>✔ Alimentação especializada</li>
+                <li>✔ Atualizações com fotos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Problems Section -->
+  <section id="problems" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Problemas Comuns que Resolvemos</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card problem-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-droplet problem-icon"></i>
+              <h5 class="card-title">Xixi e Cocô Fora do Lugar</h5>
+              <p class="card-text">Seu cão faz as necessidades em qualquer lugar da casa? Podemos ajudar a ensinar o lugar correto e estabelecer uma rotina.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card problem-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-hammer problem-icon"></i>
+              <h5 class="card-title">Destruição de Objetos</h5>
+              <p class="card-text">Seu cão destrói móveis, sapatos e outros objetos quando fica sozinho? Trabalhamos para reduzir a ansiedade e direcionar o comportamento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card problem-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-exclamation-triangle problem-icon"></i>
+              <h5 class="card-title">Agressividade</h5>
+              <p class="card-text">Seu cão mostra agressividade com outros animais ou pessoas? Identificamos as causas e trabalhamos para modificar esse comportamento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card problem-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-megaphone problem-icon"></i>
+              <h5 class="card-title">Latidos Excessivos</h5>
+              <p class="card-text">Seu cão late demais, incomodando os vizinhos? Ensinamos controle vocal e trabalhamos as causas do comportamento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4">
+          <div class="card problem-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-heartbreak problem-icon"></i>
+              <h5 class="card-title">Ansiedade de Separação</h5>
+              <p class="card-text">Seu cão fica extremamente ansioso quando você sai? A ansiedade de separação é um distúrbio comportamental comum que pode ser tratado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Tips Section -->
+  <section id="tips" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Dicas de Adestramento</h2>
+      <div class="row">
+        <div class="col-md-12 mb-1">
+          <div class="card tip-card h-100">
+            <div class="card-body d-flex justify-content-center align-items-center text-center">
+              <i class="bi bi-1-circle tip-icon position-absolute start-0 ms-5"></i>
+              <div class="text-center">
+                <h5 class="card-title ">Comece com comandos simples</h5>
+                <p class="card-text">Ensine primeiro comandos básicos como "senta", "fica" e "vem". Use recompensas e seja consistente.</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+     
+        
+        <div class="col-md-12 mb-1 pd-0">
+          <div class="card tip-card h-100">
+            <div class="card-body d-flex justify-content-center text-center position-relative">
+              <i class="bi bi-2-circle tip-icon position-absolute ms-5" style="left: 0;"></i>
+              <div class="text-center">
+                <h5 class="card-title">Seja paciente e consistente</h5>
+                <p class="card-text">O adestramento leva tempo. Use sempre as mesmas palavras e gestos para cada comando.</p>
+              </div>
+            </div>
+          </div>
+        </div>         
+        
+        <div class="col-md-12 mb-1 pd-0">
+          <div class="card tip-card h-100">
+            <div class="card-body d-flex  justify-content-center align-items-center text-center">
+              <i class="bi bi-3-circle tip-icon position-absolute start-0 ms-5"></i>
+              <div class="text-center">  
+                <h5 class="card-title">Recompense o bom comportamento</h5>
+                <p class="card-text">Use petiscos, carinho e elogios para reforçar quando seu cão acertar o comportamento desejado.</p>
+              </div>  
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-md-12 mb-1">
+          <div class="card tip-card h-100">
+            <div class="card-body d-flex justify-content-center align-items-center text-center">
+              <i class="bi bi-4-circle tip-icon position-absolute start-0 ms-5"></i>
+              <div class="text-center">
+                <h5 class="card-title">Ignore comportamentos indesejados e socialize seu cão</h5>
+                <p class="card-text">Não dê atenção quando seu cão fizer algo errado. Sem gritos ou punições físicas.<br>
+                                     Apresente seu cão a diferentes pessoas, animais e ambientes desde cedo para evitar medos e agressividade.</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-12 mt-5">
+          <div class="card tip-card h-100" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); color: white;">
+            <div class="card-body d-flex flex-column justify-content-center text-center">
+                <div class="d-flex justify-content-center align-items-center rounded-circle bg-light mx-auto mb-2 border border-1 border-light" style="width: 45px; height: 40x;">
+                  <i class="bi bi-exclamation-circle-fill text-danger" style="font-size: 40px; line-height: 1;"></i>
+                </div>
+                <p class="card-text fw-bold">
+                  Tudo que o tutor faz influencia o comportamento do cão, seja para o bem ou para o mal. <br>
+                  Entender isso é um passo importante para resolver qualquer problema. <br>
+                  Por isso, meu trabalho não é só com o cachorro — também envolve orientar o tutor sobre como agir com ele. <br>
+                  No fim das contas, um cachorro bem educado é mais feliz. E um cão feliz faz o tutor ainda mais feliz.
+                </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <!--div class="col-md-6">
+          <div class="card tip-card h-100">
+            <div class="card-body d-flex flex-column justify-content-center text-center" style="max-width: 800px;">
+              <div class="mx-auto">   
+                <i class="bi bi-instagram tip-icon"></i>
+              </div>
+              
+              <div class="text-center">
+                <h5 class="card-title">Veja mais dicas no Instagram</h5>
+                <p class="card-text">Acompanhe nosso Instagram para mais dicas e avaliações de clientes.</p>
+                <a href="https://www.instagram.com/z.adestramento/" class="btn btn-outline-primary">Seguir</a>
+              </div>
+            </div>
+          </div-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works Section -->
+  <section id="how-it-works" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Como Funciona</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-chat-dots-fill problem-icon"></i>
+              <h5 class="card-title">1. Agende uma Consulta</h5>
+              <p class="card-text">Entre em contato para agendar uma consulta inicial. Vamos entender as necessidades do seu cão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-check-circle-fill problem-icon"></i>
+              <h5 class="card-title">2. Avaliação Personalizada</h5>
+              <p class="card-text">Faremos uma avaliação completa do comportamento do seu cão e definiremos um plano de adestramento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-gear-fill problem-icon"></i>
+              <h5 class="card-title">3. Início do Treinamento</h5>
+              <p class="card-text">Iniciaremos o treinamento de acordo com o plano definido. Acompanharemos o progresso do seu cão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-calendar-check-fill problem-icon"></i>
+              <h5 class="card-title">4. Acompanhamento Contínuo</h5>
+              <p class="card-text">Após o treinamento, faremos um acompanhamento para garantir que os resultados sejam mantidos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-chat-left-text-fill problem-icon"></i>
+              <h5 class="card-title">5. Feedback e Ajustes</h5>
+              <p class="card-text">Receberemos seu feedback e faremos ajustes no treinamento, se necessário, para garantir os melhores resultados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-heart-fill problem-icon"></i>
+              <h5 class="card-title">6. Seu Cão Feliz e Bem Comportado</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Sobre Mim</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4" style="min-height: 500px;">
+          <div class="">
+            <img src="image/cao_alt.jpg" class: "border border-1 border-dark rounded-circle img-fluid" style: "height: 500px;" alt: "Sobre Zeildo">
+          </div> 
+        </div>
+        <div class="col-md-8">
+          <div class="formal">      
+            <p class="lead">Olá, sou Zeildo, e essa ao meu lado é a Chiquinha.</p>
+            <p>Sou graduado em Zootecnia pela UENF, com especialização em adestramento canino, tema da minha monografia e principal área de atuação.</p>
+            <p>Trabalho há mais de 3 anos com adestramento, sempre buscando garantir o bem-estar e a felicidade dos cães de forma respeitosa e personalizada.</p>
+            <p>Minha abordagem é baseada em carinho, paciência e técnicas de reforço positivo, respeitando as características de cada animal.</p>
+            <p>Também atuo em projetos sociais, ajudando cães em situação de rua e incentivando a adoção responsável.</p>
+            <p>Já atuei no CCZ (Centro de Controle de Zoonoses) e participei de várias ações voluntárias, cuidando de cães em situações difíceis.</p>
+            <p>Estou aqui para ajudar você a melhorar a vida do seu melhor amigo!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Space Section -->
+  <section id="space" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Conheça Meu Espaço</h2>
+    <div class="row">
+
+    <div class="col-md-4 col-6">
+      <img src"images/Zeildog/6.jpg" class: "img-fluid space-img rounded-circle" alt: "Espaço para cães 1">
+    </div>
+
+    <div class="col-md-4 col-6">
+      <img "images/Zeildog/1.jpg", class: "img-fluid space-img rounded-circle", alt: "Espaço para cães 1">
+    </div>
+
+    <div class="col-md-4 col-6">
+      <img "images/Zeildog/2.jpg", class: "img-fluid space-img rounded-circle", alt: "Espaço para cães 1">
+    </div>
+
+    <div class="col-md-4 col-6 mt-4">
+      <img "images/Zeildog/3.jpg", class: "img-fluid space-img rounded-circle", alt: "Espaço para cães 1">
+    </div>
+
+    <div class="col-md-4 col-6 mt-4">
+      <img "images/Zeildog/4.jpg", class: "img-fluid space-img rounded-circle", alt: "Espaço para cães 1">
+    </div>
+
+    <div class="col-md-4 col-6 mt-4">
+      <img "images/Zeildog/5.jpg", class: "img-fluid space-img rounded-circle", alt: "Espaço para cães 1">  
+    </div>
+
+      </div>
+      <div class="text-center mt-5">
+        <p class="lead">Um ambiente seguro, limpo e acolhedor especialmente projetado para o conforto dos cães</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Caes Section -->
+  <section id="caes" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Conheça Alguns dos Nossos Cães</h2>
+      <div class="row">
+        <div class="col-md-4" >
+          <img "images/Zeildog/thor.jpg", class: "img-fluid space-img rounded-circle", style: "width: 300px; height: 300px;",alt: "Imagem de Thor">
+          <h5 class="mt-3">Thor</h5>
+          <p>Um adorável Golden Retriever que ama correr e brincar. Sempre cheio de energia!</p>
+      </div>
+
+      <div class="col-md-4">
+        <img "images/Zeildog/rihanna.jpg", class: "img-fluid space-img rounded-circle", style: "width: 300px; height: 300px;",alt: "Imagem de Rihanna">
+        <h5 class="mt-3">Rihanna</h5>
+        <p>Uma Border Collie inteligente e brincalhona. Adora aprender novos truques!</p>
+      </div>
+
+      <div class="col-md-4">
+        <img "images/Zeildog/apolo.jpg", class: "img-fluid space-img rounded-circle", style: "width: 300px; height: 300px;", alt: "Imagem de Apolo">
+        <h5 class="mt-3">Apolo</h5>
+        <p>Um Doberman leal e protetor. Sempre alerta e pronto para defender seus amigos!</p>
+      </div>
+
+      <div class="col-md-4 mt-4">
+        <img "images/Zeildog/aurora.jpg", class: "img-fluid space-img", style: "width: 300px; height: 300px;",alt: "Imagem de Aurora">
+        <h5 class="mt-3">Aurora</h5>
+        <p>Uma linda Shih Tzu que adora ser mimada. Sempre pronta para receber carinho!</p>
+      </div>
+
+      <div class="col-md-4 mt-4">
+        <img "images/Zeildog/cafe.jpg", class: "img-fluid space-img", style: "width: 300px; height: 300px;", alt: "Imagem de Café">
+        <h5 class="mt-3">Café</h5>
+        <p>Um Labrador amigável e sociável. Adora fazer novos amigos e brincar no parque!</p>
+      </div>
+
+      <div class="col-md-4 mt-4">
+        <img "images/Zeildog/theo.jpg", class: "img-fluid space-img", style: "width: 300px; height: 300px;", alt: "Imagem de Theo">
+        <h5 class="mt-3">Theo</h5>
+        <p>Um Cocker Spaniel carinhoso e brincalhão. Sempre pronto para uma aventura!</p>
+      </div>
+    </div>
+      <div class="text-center mt-5">
+        <p class="lead">Esses são apenas alguns dos nossos amigos peludos. Cada um com sua personalidade única!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section>
+  <!--section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">O que dizem nossos clientes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="asset_path('cao6.webp')" class="testimonial-img mb-3" alt="Cliente 1">
+              <p class="card-text">"Meu Thor adora os passeios! Noto que ele fica mais calmo e feliz depois que começamos com os serviços."</p>
+              <h5 class="card-title">Mariana S.</h5>
+              <div class="text-warning">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="asset_path('cao7.jpg')" class="testimonial-img mb-3" alt="Cliente 2">
+              <p class="card-text">"O adestramento transformou a convivência com meu labrador. Recomendo demais o trabalho profissional!"</p>
+              <h5 class="card-title">Ricardo L.</h5>
+              <div class="text-warning">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="asset_path('cao8.avif')" class="testimonial-img mb-3" alt="Cliente 3">
+              <p class="card-text">"Sempre que viajo, sei que meu cachorro está em boas mãos. Recebo fotos e ele volta super feliz!"</p>
+              <h5 class="card-title">Ana Paula M.</h5>
+              <div class="text-warning">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div-->
+  </section-->
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Entre em Contato</h2>
+      <h3 class="text-center mb-4">Me conte seu problema e me envie uma foto do seu cão ou me conte sua história com ele!</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Seu Nome</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Seu Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Telefone</label>
+              <input type="tel" class="form-control" id="phone" required>
+            </div>
+            
+            
+
+            <div class="mb-3">
+              <label for="service" class="form-label">Serviço de interesse</label>
+              <select class="form-select" id="service">
+                <option selected>Selecione um serviço</option>
+                <option value="walking">Aula da Adestramento</option>
+                <option value="training">Adestramento a Domicílios</option>
+                <option value="boarding">Treino Comportamental</option>
+                <option value="thinking">AINDA NÃO DECIDI</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Me conte o seu problema</label>
+              <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="foto" class="btn btn-outline-secondary">
+                <i class="bi bi-upload"></i> Enviar Foto
+              </label>
+              <input type="file" id="foto" accept="image/*" hidden>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Informações de Contato</h5>
+              <p class="card-text">
+                <i class="bi bi-geo-alt-fill"></i> Rua Tal Bairro Jockey, Campos dos Goyatacazes - RJ<br>
+                <i class="bi bi-telephone-fill"></i> (22) 98154-6726 (Campos)<br>
+                <i class="bi bi-whatsapp"></i> (24) 98147-2114 (Volta Redonda)<br>
+                <i class="bi bi-envelope-fill"></i> images/Zeildogramos@ymail.com
+              </p>
+              <hr>
+              <div class="text-center mt-4">
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Zeildo - Todos os direitos reservados</p>
+      <p class="mb-0">Cuidando com amor e profissionalismo do seu melhor amigo</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
